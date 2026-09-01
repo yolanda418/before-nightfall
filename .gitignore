@@ -1,0 +1,68 @@
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器临时文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# Cline 配置（不入仓）
+.claude/
+
+# Python / Node 临时文件
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+
+# 工具链临时文件（不应入仓）
+.audit_tmp/
+prompts/brief*_std*.txt
+prompts/compose*_std*.txt
+prompts/pyversion.txt
+prompts/verify_*.py
+prompts/init_*.py
+prompts/extract_ships_Chapter_*.md
+
+# tools/ 下的临时统计产物
+tools/_chapter_stats.csv
+tools/_chapter_stats.txt
+
+# 本项目约定的调试脚本前缀（防止将来调试残留混入仓库）
+_audit*
+_fix_*
+_scan_*
+_psver*
+_test_*
+
+# 临时输出 / 日志
+*.log
+*.tmp
+*.out
+tmp/
+drafts/
+scratch/
+
+# 备份文件（防误传）
+*.bak
+*~
+*_old.md
+*_backup.md
+
+# 敏感信息（绝对不能入仓）
+*.env
+.env.local
+*.pem
+secrets/
+
+# API key 探测痕迹
+*api_key*
+*apikey*
+
+# 大文件 / 二进制（按需启用）
+# *.pdf
+# *.docx

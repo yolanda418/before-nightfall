@@ -1,0 +1,56 @@
+{
+  "main_case": {
+    "name": "第七起系列",
+    "beats": [
+      "起：第七起钩子，主角登场",
+      "承：副线小案 1 + 1 条主案物证浮现",
+      "承：副线小案 2 + 关系网建立",
+      "转：一场变故打乱所有人",
+      "合：副线小案收束 + 大 Boss 暗线加强",
+      "合：直面大 Boss + 主角觉醒"
+    ],
+    "beat": 1,
+    "in_beat": 2
+  },
+  "side_cases": [
+    {
+      "name": "案件零·七号仓库",
+      "ch_start": 1,
+      "ch_end": 1,
+      "status": "closed"
+    },
+    {
+      "name": "案件一·秦瑾案",
+      "ch_start": 3,
+      "ch_end": 6,
+      "status": "closed"
+    },
+    {
+      "name": "案件二·离岸金融中心案",
+      "ch_start": 8,
+      "ch_end": 13,
+      "status": "closed"
+    },
+    {
+      "name": "副线案三·待揭晓",
+      "ch_start": 14,
+      "ch_end": null,
+      "status": "open"
+    }
+  ],
+  "foreshadow": {
+    "main": [
+      {
+        "id": "M-1",
+        "name": "三年前被选中真相",
+        "status": "hidden"
+      },
+      "M-2",
+      "M-4",
+      "M-5",
+      "M-6",
+      "M-7",
+      "M-8"
+    ]
+  }
+}
