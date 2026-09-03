@@ -27,10 +27,48 @@ prompts/pyversion.txt
 prompts/verify_*.py
 prompts/init_*.py
 prompts/extract_ships_Chapter_*.md
+prompts/brief_*.txt          # engine/writer.py brief N 生成的过程文件
+prompts/.results/            # run_dispatch.py 的结果落盘目录
+prompts/dispatch/            # 派发给 Claude 的 prompt 副本目录
+prompts/.results_*.md
+prompts/_clues_*.md          # 编码转换副本
+prompts/*.bak
 
 # tools/ 下的临时统计产物
 tools/_chapter_stats.csv
 tools/_chapter_stats.txt
+tools/_stats_*.txt
+tools/_lint_*.txt
+tools/_safety_*.txt
+tools/_pre_*.txt
+tools/_gate.txt
+tools/_add.txt
+tools/_commit.txt
+tools/_push.txt
+tools/_log*.txt
+tools/_st*.txt
+tools/_gs.txt
+tools/_gr.txt
+tools/_gl.txt
+tools/_gb.txt
+tools/_git_*.txt
+tools/_ls.txt
+tools/_fin.txt
+tools/_dump_*.txt
+tools/_dump_*.py
+tools/_check_*.txt
+tools/_check_*.py
+tools/_t.txt
+tools/_t8_*.txt
+tools/_t9_*.txt
+tools/_dc.txt
+tools/_dt8.txt
+tools/_it8.txt
+tools/_cu*.txt
+tools/_cu*.py
+tools/_pre.txt
+tools/_cc.txt
+tools/clues_plain.txt
 
 # 本项目约定的调试脚本前缀（防止将来调试残留混入仓库）
 _audit*
@@ -38,6 +76,12 @@ _fix_*
 _scan_*
 _psver*
 _test_*
+_clue_*
+_dump_*
+_check_*
+_t8_*
+_t9_*
+_cu*
 
 # 临时输出 / 日志
 *.log
