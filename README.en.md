@@ -10,15 +10,11 @@
 
 ## 🔀 Project Background & Credits
 
-This repository was originally forked from [Open Souls](https://github.com/open-souls/open-souls) — an open-source framework for building TypeScript-based "AI Agents with personality."
-The current project is a **complete Python rewrite**, redirected to a different application domain: **AI-assisted collaborative long-form novel writing**, including:
-
-- Multi-stage prompt orchestration pipeline
-- Quality gate enforcement system (lint gates)
-- Structured state persistence for long-horizon tasks
-- Human-in-the-loop collaborative review mechanism
-
-Some internal naming conventions (character/state management terminology, environment variable naming) are inherited from the original project's design philosophy.
+This project is built on and customizes the AI-assisted writing engine architecture from
+[Open Souls](https://github.com/open-souls/open-souls), including its planner-writer-editor pipeline,
+quality gate mechanisms, and character state tracking design. On top of this foundation, this project
+configures its own worldview, character system, and plot outline, with writing standards and some
+engineering details adapted for a crime/mystery genre.
 
 ---
 
