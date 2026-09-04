@@ -108,8 +108,8 @@ Novel_New/                          ← 项目根（仓库入口）
 ├── chapters/                       ← 所有章节正文（定稿）
 │   ├── Chapter_01.md               ← 七号仓库
 │   ├── Chapter_02.md               ← 刚好书店
-│   ├── ...                         ← 第 14 章待写
-│   └── Chapter_13.md               ← 旧石灰号的根
+│   ├── ...                         ← 第 01-15 章已定稿
+│   └── Chapter_15.md               ← 一盏灯
 │
 ├── engine/                          ← 写作引擎（Python 3.10+）
 │   ├── writer.py                   ← 主编排器（brief/compose/plan/draft）
@@ -122,8 +122,7 @@ Novel_New/                          ← 项目根（仓库入口）
 │   ├── cast.py                     ← 角色查询辅助
 │   ├── trace.py                    ← 每章定稿后追踪器（登场 + 字数 + 校验）
 │   ├── _extract_ships.py           ← 羁绊线抽取器（母题关键词 + 共现矩阵）
-│   ├── validate.py                 ← schema 校验
-│   └── test_lint.py                ← lint 单测
+│   └── validate.py                 ← schema 校验
 │
 └── tools/                          ← 工具脚本（PowerShell + Python）
     ├── chapter_stats.ps1           ← 字数三口径统计（硬约束）
@@ -131,8 +130,8 @@ Novel_New/                          ← 项目根（仓库入口）
     ├── validate_changed.py         ← PR 推送前 lint（增量门）
     ├── cast_absence_scan.py        ← 角色缺席扫描（三档阈值）
     ├── prescreen.py                ← 预筛
-    ├── smoke_test.py               ← 冒烟测试
-    └── _run_stats.ps1              ← 统计脚本包装
+    ├── punct_scan.py               ← 标点 AI 通病扫描
+    └── smoke_test.py               ← 冒烟测试
 ```
 
 ---
