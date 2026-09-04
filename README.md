@@ -141,11 +141,11 @@ Novel_New/                          ← 项目根（仓库入口）
 ### 1. 跑工具链（零 token 看流程）
 
 ```bash
-# 验证第 14 章本回简报（生成 prompts/brief14_stdout.txt）
-python engine/writer.py brief 14
+# 验证第 15 章本回简报（生成 prompts/brief15_stdout.txt）
+python engine/writer.py brief 15
 
-# 一键生成策划 + 写手 prompt（生成 prompts/Chapter_14_plan.md + _draft.md）
-python engine/writer.py compose 14
+# 一键生成策划 + 写手 prompt（生成 prompts/Chapter_15_plan.md + _draft.md）
+python engine/writer.py compose 15
 ```
 
 ### 2. 检查章节质量（v3.1 硬约束）
@@ -161,7 +161,7 @@ powershell tools/check_chapter_quality.ps1
 python tools/cast_absence_scan.py
 
 # 羁绊线抽取（第 N 章登场角色 + 母题关键词 + 角色共现 + CLUES 对齐）
-python engine/_extract_ships.py 13
+python engine/_extract_ships.py 15
 ```
 
 ### 3. PR 推送前增量门
@@ -264,7 +264,7 @@ NAME       STATUS     LAST   GAP  APPS  WARN
 ```
 
 ```
-$ python engine/_extract_ships.py 13
+$ python engine/_extract_ships.py 15
 # 第 13 章 · 羁绊线抽取报告
 | 上一级 | 林岳洲背后 | 15 |
 | 三年 | 心结 / 时间锚 | 10 |
@@ -285,7 +285,7 @@ cp .env.example .env
 # ANTHROPIC_API_KEY=sk-ant-...
 
 # 3. 验证 run_dispatch.py 跑通
-python engine/run_dispatch.py --chapters 14 --effort high --dry-run
+python engine/run_dispatch.py --chapters 15 --effort high --dry-run
 ```
 
 不配 key 时工具链**自动降级**到 Cline 协作模式——`run_dispatch.py` 跳过远端派发，Cline 自己读 prompt 文件写正文。
